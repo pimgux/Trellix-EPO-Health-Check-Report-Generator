@@ -20,6 +20,8 @@ Para ejecutar este proyecto, necesitarás instalar las siguientes librerías de 
 
 pip install python-docx googletrans==4.0.0-rc1
 ```
+Tambien vamos a necesitar tener instalado en la ePO Trellix la extencion y recopilando informacion por un periodo de tiempo. 
+-  ePO Server Health (https://docs.trellix.com/es-ES/bundle/trellix-epolicy-orchestrator-on-prem-5.10.0-product-guide/page/UUID-ce1ef548-2ba5-8858-e1a6-4444631d8b82.html)
 ## 🖱️Uso
 Coloca los archivos serverinfo.txt y healthcheckresults.txt en la carpeta raíz del proyecto.
 Ejecuta el script principal de Python:
@@ -31,8 +33,9 @@ Ejecuta el script principal de Python:
 
 ## 📂Archivos de entrada
 - serverinfo.txt: Contiene información del servidor y la base de datos.
+  -  https://10.106.13.1:8443/rest/hcrs/healthcheckresults/index?start=0&limit=25&includeManual=false   
 - healthcheckresults.txt: Contiene los resultados del health check, incluyendo el estado y las recomendaciones.
-
+  -  https://X.X.X.X:8443/rest/hcrs/healthcheckresults/index?start=4655&limit=1000&includeManual=false
 ## 📄Ejemplo de salida
 - El archivo de salida será un documento Word que contiene:
 - Una portada con el cliente y la fecha.
