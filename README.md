@@ -1,4 +1,4 @@
-# 🚀Trellix-EPO-Health-Check-Report-Generator
+# 🚀Trellix EPO Health Check Report Generator
 Este proyecto automatiza la generación de informes de Health Check para la plataforma **Trellix EPO**, permitiendo extraer, procesar y formatear los resultados de los archivos JSON de health check (`healthcheckresults.txt`) y la información del servidor (`serverinfo.txt`) en un documento de Word.
 
 ## ✨Características
@@ -28,12 +28,12 @@ Ejecuta el script principal de Python:
 - bash
 - python generate_report.py
 - Ingresa el nombre del cliente cuando se te solicite.
-- Selecciona una opción de "runOn" para generar el informe basado en ese dataset.
+- Selecciona una opción de "Fecha" para generar el informe basado en ese dataset.
 - El informe será generado automáticamente en un archivo Word, con el nombre del cliente en el archivo de salida.
 
 ## 📂Archivos de entrada
 - serverinfo.txt: Contiene información del servidor y la base de datos.
-  -  https://10.106.13.1:8443/rest/hcrs/healthcheckresults/index?start=0&limit=25&includeManual=false   
+  -  https://X.X.X.X:8443/rest/hcrs/healthcheckresults/index?start=0&limit=25&includeManual=false   
 - healthcheckresults.txt: Contiene los resultados del health check, incluyendo el estado y las recomendaciones.
   -  https://X.X.X.X:8443/rest/hcrs/healthcheckresults/index?start=4655&limit=1000&includeManual=false
 ## 📄Ejemplo de salida
