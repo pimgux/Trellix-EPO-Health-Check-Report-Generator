@@ -1,0 +1,4 @@
+python-docx==0.8.11
+googletrans==4.0.0-rc1
+requests==2.31.0
+jsonschema==4.17.3
